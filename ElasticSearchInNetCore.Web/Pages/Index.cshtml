@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<form method="post">
+    <div class="text-center">
+        <h1 class="display-4">My First Razor Page</h1>
+        <span>
+            Search By Order Detail:: <input asp-for="SearchString" />
+        </span>
+        <input type="submit" name="Search" />
+    </div>
+</form>
+<span>
+    Result:: <pre>@Model.ResultData</pre>
+</span>
